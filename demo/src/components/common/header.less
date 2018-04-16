@@ -1,0 +1,35 @@
+.Header {
+	display: flex; display: -webkit-flex; padding: 10px 20px;
+	.logo {
+		width: 40px;
+		> a {
+			display: block;
+		}
+		img {
+			animation: rotate360 5s infinite;
+		}
+	}
+	.Navigation {
+		flex: 1; padding-left: 40px;
+		> ul {
+			> li {
+				float: left; line-height: 40px; margin: 0 10px; font-size: 16px;
+				> a {
+					display: block; transition: .2s all ease;
+					&.active, &:hover {
+						border-bottom: 2px solid #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

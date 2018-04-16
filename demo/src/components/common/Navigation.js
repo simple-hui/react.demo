@@ -5,7 +5,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className="Navigation">
-        <ul>
+        <ul className="clearfix">
 					<li>
 						<NavLink to="/" exact activeClassName="active">home</NavLink>
 					</li>

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter } from 'react-router-dom'
+import { Route, BrowserRouter } from 'react-router-dom';
+import '../src/components/app.css';
 
 //嵌入头部
 import Header from './components/common/Header';
 
 //嵌入底部
-import Footer from './components/common/Footer';
+// import Footer from './components/common/Footer';
 
 //增加路由页面
 import Home from './components/Home';
@@ -16,13 +17,13 @@ class App extends Component {
     return (
       <div>
         <BrowserRouter>
-          <div>
+          <div className="appContent">
             <Header />
             <Route path="/" exact component={Home} />
             <Route path="/Setting" component={Setting} />
           </div>
         </BrowserRouter>
-        <Footer />
+        {/*<Footer />*/}
       </div>
     	
     );

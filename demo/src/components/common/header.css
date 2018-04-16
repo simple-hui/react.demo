@@ -1,34 +1,56 @@
 .Header {
-  display: flex;
-  display: -webkit-flex;
-  padding: 10px 20px;
+  background-color: #151516;
 }
 .Header .logo {
-  width: 40px;
+  background: #000;
+  width: 205px;
+  padding: 10px;
+  font-size: 22px;
+  margin-top: 14px;
 }
 .Header .logo > a {
   display: block;
+  color: #f0f0f0;
 }
 .Header .logo img {
   animation: rotate360 5s infinite;
+  width: 40px;
+  float: left;
 }
-.Header .Navigation {
-  flex: 1;
-  padding-left: 40px;
+.Header .logo span {
+  display: block;
+  float: left;
+  line-height: 45px;
+  padding-left: 10px;
 }
 .Header .Navigation > ul > li {
-  float: left;
-  line-height: 40px;
-  margin: 0 10px;
+  line-height: 26px;
+  margin: 5px 0;
   font-size: 16px;
+}
+.Header .Navigation > ul > li:nth-child(1) > a,
+.Header .Navigation > ul > li:nth-child(4) > a {
+  width: 55px;
+}
+.Header .Navigation > ul > li:nth-child(2),
+.Header .Navigation > ul > li:nth-child(5) {
+  width: 60px;
+}
+.Header .Navigation > ul > li:nth-child(3),
+.Header .Navigation > ul > li:nth-child(6) {
+  width: 73px;
 }
 .Header .Navigation > ul > li > a {
   display: block;
   transition: .2s all ease;
+  background-color: #2a87cd;
+  color: #fff;
+  text-align: center;
+  box-shadow: -5px 0 0 0 #000 inset;
 }
 .Header .Navigation > ul > li > a.active,
 .Header .Navigation > ul > li > a:hover {
-  border-bottom: 2px solid #000;
+  background-color: #78bc32;
 }
 @keyframes rotate360 {
   from {

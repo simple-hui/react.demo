@@ -1,0 +1,12 @@
+.appContent {
+  display: flex;
+  display: -webkit-flex;
+  height: 100%;
+}
+.appContent .Header {
+  width: 200px;
+  height: 100%;
+}
+.appContent > div:last-child {
+  flex: 1;
+}

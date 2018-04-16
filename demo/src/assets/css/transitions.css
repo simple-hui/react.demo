@@ -1,0 +1,57 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 150ms;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.fadeOutUp {
+  animation-name: fadeOutUp;
+  animation-duration: 150ms;
+  animation-fill-mode: both;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 150ms;
+  animation-fill-mode: both;
+}
+.zoom-in-enter-active,
+.zoom-in-leave-active {
+  transition: opacity 150ms;
+}
+.zoom-in-enter-active .animation-content,
+.zoom-in-leave-active .animation-content,
+.zoom-in-enter-active .animation-content,
+.zoom-in-leave-active .animation-content {
+  transition: transform 150ms;
+}
+.zoom-in-enter,
+.zoom-in-leave-active {
+  opacity: 0;
+}
+.zoom-in-enter .animation-content,
+.zoom-in-leave-active .animation-content,
+.zoom-in-enter .animation-content,
+.zoom-in-leave-active .animation-content {
+  transform: scale(0.5);
+}

@@ -4,7 +4,8 @@ class Footer extends Component {
   render() {
     return (
       <div className="Footer">
-        Footer
+        <p>Phone 13520821459</p>
+				<p>lh19920515@outlook.com</p>
       </div>
     );
   }

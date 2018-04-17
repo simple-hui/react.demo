@@ -1,12 +1,14 @@
 .Header {
   background-color: #151516;
+  position: relative;
 }
 .Header .logo {
   background: #000;
   width: 205px;
   padding: 10px;
   font-size: 22px;
-  margin-top: 14px;
+  position: absolute;
+  top: 14px;
 }
 .Header .logo > a {
   display: block;
@@ -23,6 +25,9 @@
   line-height: 45px;
   padding-left: 10px;
 }
+.Header .Navigation {
+  margin-top: 95px;
+}
 .Header .Navigation > ul > li {
   line-height: 26px;
   margin: 5px 0;
@@ -32,12 +37,12 @@
 .Header .Navigation > ul > li:nth-child(4) > a {
   width: 55px;
 }
-.Header .Navigation > ul > li:nth-child(2),
-.Header .Navigation > ul > li:nth-child(5) {
+.Header .Navigation > ul > li:nth-child(2) > a,
+.Header .Navigation > ul > li:nth-child(5) > a {
   width: 60px;
 }
-.Header .Navigation > ul > li:nth-child(3),
-.Header .Navigation > ul > li:nth-child(6) {
+.Header .Navigation > ul > li:nth-child(3) > a,
+.Header .Navigation > ul > li:nth-child(6) > a {
   width: 73px;
 }
 .Header .Navigation > ul > li > a {
@@ -46,11 +51,22 @@
   background-color: #2a87cd;
   color: #fff;
   text-align: center;
-  box-shadow: -5px 0 0 0 #000 inset;
+  box-shadow: -2px 0 2px 0 #000 inset;
+  float: right;
 }
 .Header .Navigation > ul > li > a.active,
 .Header .Navigation > ul > li > a:hover {
   background-color: #78bc32;
+}
+.Header .Footer {
+  margin: 130px 0px 0 0;
+  color: #969b94;
+  text-align: right;
+  font-size: 10px;
+  transform: scale(0.8);
+}
+.Header .Footer > p {
+  margin: 2px 0;
 }
 @keyframes rotate360 {
   from {

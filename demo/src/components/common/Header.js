@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import Navigation from './Navigation';
+//嵌入底部
+import Footer from './Footer';
+
+
 import './header.css';
 class Header extends Component {
   render() {
@@ -14,6 +18,7 @@ class Header extends Component {
 					</Link>
       	</h1>
         <Navigation />
+        <Footer />
       </div>
     );
   }

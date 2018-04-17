@@ -5,13 +5,25 @@ class Navigation extends Component {
   render() {
     return (
       <div className="Navigation">
-        <ul className="clearfix">
-					<li>
+        <ul>
+					<li className="clearfix">
 						<NavLink to="/" exact activeClassName="active">home</NavLink>
 					</li>
-					<li>
+					<li className="clearfix">
 						<NavLink to="/Setting" activeClassName="active">setting</NavLink>
 					</li>
+          <li className="clearfix">
+            <NavLink to="/Blog" activeClassName="active">Blog</NavLink>
+          </li>
+          <li className="clearfix">
+            <NavLink to="/CDN" activeClassName="active">CDN</NavLink>
+          </li>
+          <li className="clearfix">
+            <NavLink to="/Article" activeClassName="active">Article</NavLink>
+          </li>
+          <li className="clearfix">
+            <NavLink to="/Contact" activeClassName="active">Contact</NavLink>
+          </li>
         </ul>
       </div>
     );

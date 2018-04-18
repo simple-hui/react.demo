@@ -2,9 +2,8 @@
 
 
 const express = require('express');
-const app = express();
+const app = new express();
 const router = express.Router();
-
 
 
 router.post('/api/home.do',function (req, res) {

@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './home.css';
 
 class Home extends Component {
+	demo() {
+		axios.post('/api/home.do').then(resp=>{
+			console.log(resp);
+		})
+	}
+
+	
+
   render() {
     return (
       <div className="home">

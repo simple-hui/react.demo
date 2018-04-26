@@ -6,7 +6,9 @@ class Home extends Component {
 	//初始化钩子函数
 	componentDidMount() {
 		// alert();
-		axios.post('/api/home.do').then(resp=>{
+		axios.post('/api/home.do',{
+			id: '111'
+		}).then(resp=>{
 			console.log(resp);
 		})
 	}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
 import '../src/components/app.css';
 
+
 //嵌入头部
 import Header from './components/common/Header';
 

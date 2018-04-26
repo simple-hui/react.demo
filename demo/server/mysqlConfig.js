@@ -12,6 +12,7 @@ const config = JSON.parse(fs.readFileSync(
 	)).config['sql']
 
 
+
 let connection = mysql.createConnection(config);
 
 

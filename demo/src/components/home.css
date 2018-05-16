@@ -1,3 +1,6 @@
 .home .homeImg {
   width: 100%;
 }
+.home .homeDetail {
+  margin-top: 10px;
+}
